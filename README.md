@@ -10,6 +10,13 @@ dir.mkdir();
 File file = new File(path + "/log.txt");
 Logger log = new Logger(file);
 ```
+
+Add to AndroidManifest.xml
+```xml
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+```
+
 ezpz.
 
 You can then create logs with
